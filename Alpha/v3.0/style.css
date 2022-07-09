@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+* {font-family: 'Grandstander', cursive;}
+*:focus {outline: 0;}
+
+select {
+    background-color: #39CCCC;
+    font-size: 15px;
+}
+.btn-jelly:hover {
+  -webkit-animation: jelly 0.5s;
+          animation: jelly 0.5s;
+}
+@-webkit-keyframes jelly {
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+}
+@keyframes jelly {
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+}
+.btn {
+    margin: 0 auto;
+    margin-top:10px;
+    display: block;
+  --btn-padding: 12px 20px;
+  --btn-border-width: 1px;
+  --btn-border-style: solid;
+  --btn-border-color: var(--secondary-color);
+  --btn-radius: 4px;
+  position: relative;
+  padding: var(--btn-padding);
+  color: var(--btn-color, black);
+  background: var(--btn-bg, white);
+  border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
+  border-radius: var(--btn-radius);
+}
+.btn:hover, .btn:focus {
+  border-color: var(--btn-bg, var(--secondary-color-darker));
+}
+
+.btn:active {
+  border-color: var(--btn-bg, var(--primary-color-darker));
+}
+
+.btn-primary {
+  --btn-color: white;
+  --btn-bg: var(--primary-color);
+  --btn-border-color: var(--btn-bg);
+}
+
+.btn-primary:active {
+  --btn-bg: var(--primary-color-darker);
+}
+:root {
+  --primary-color: hsl(196, 78%, 61%);
+  --primary-color-darker: hsl(196, 68%, 54%);
+  --primary-color-lighter: hsl(196, 78%, 81%);
+}
+
+.sub {
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid #575756;
+    height: 17.454px;
+    width: auto;
+    padding: 12px 24px;
+    position: absolute;
+    bottom: auto;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px 2px 2px rgba(0, 0, 0, .25);
+    transition-duration: 0.4s;
+}
+
+.sub:hover {
+    background-color: #17a2b8;
+    fill: white;
+}
+
+.search_input {
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset 2px 2px 2px rgba(0, 0, 0, .25);
+    width: 90%;
+    padding: 12px 24px;
+    background-color: white;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #575756;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid #575756;
+    border-right: none;
+    transition: all 250ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search_input::-webkit-input-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search_input::-moz-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search_input:-ms-input-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search_input::-ms-input-placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search_input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.Button {
+    border-radius: 10px;
+    height: 10px;
+    line-height: 10px;
+    color: #17a2b8;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 19px;
+    background-color: transparent;
+    border: solid #17a2b8 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.4s;
+    margin-top: .5rem;
+    -webkit-animation: azoom 1s;
+    animation: azoom 1s;
+}
+
+.Button:hover {
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+    background: #17a2b8;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.disable {
+    border-radius: 10px;
+    height: 10px;
+    line-height: 10px;
+    color: #6c757d;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 19px;
+    background-color: transparent;
+    border: solid #6c757d 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: not-allowed;
+    text-align: center;
+    transition-duration: 0.4s;
+    margin-top: .5rem;
+}
+
+.container {
+    /*border: 2px solid #17a2b8;*/
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    padding: 20px;
+    margin: 10px 0;
+    -webkit-animation: azoom 0.4s;
+    animation: azoom 0.4s;
+}
+
+@-webkit-keyframes azoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes azoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.darker {
+    /*border-color: lightgreen;*/
+    background-color: #c4e2e8;
+    border-bottom-right-radius: 0px;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%
+}
+
+.container.darker img{
+    float: right;
+    margin-left: 20px;
+    margin-right: 0
+}
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+#loader {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    background: #fff url('img/Loading.gif') no-repeat center center;
+}
+button {
+    padding: auto;
+    font-size: auto;
+    color: #21253d;
+}
+
+#Textbox {
+    height: 91.7vh;
+    overflow: auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.bot {
+    max-width: 65%;
+    margin: 0 auto;
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+}
+
+#Textbox::-webkit-scrollbar-thumb {
+    cursor: progress;
+    background: #2980B9;
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.obj {
+    width: 6px;
+    height: 40px;
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    ;
+    margin: 0 3px;
+    border-radius: 10px;
+    -webkit-animation: loading 0.8s infinite;
+    animation: loading 0.8s infinite;
+}
+
+.obj:nth-child(odd) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+@-webkit-keyframes loading {
+    0% {height: 0;}
+    50% {height: 40px;}
+    100% {height: 0;}
+}
+
+@keyframes loading {
+    0% {height: 0;}
+    50% {height: 40px;}
+    100% {height: 0;}
+}
+
+#myInput {
+    width: 93%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #575756;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.dropdown-content {
+    width: 99%;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    overflow: auto;
+    max-height: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    height: auto;
+    cursor: pointer;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+    padding: 19px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 1s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.hide {
+    display: none;
+}

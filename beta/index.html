@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chatty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="dns-prefetch" href="https://v2-api.sheety.co/9a12bc0f9230b39275673e809fbca912/chattyApi/">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.min.js'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.min.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="chatty.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="loading">
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>
+    <div class="bot">
+        <div id="Textbox"></div>
+        <form onsubmit="event.preventDefault(); chatty(input().toLowerCase());this.reset()">
+            <div class="search_container">
+                <input class="search_input" id="option-typer" type="text" placeholder="Type the options instead...">
+                <button class="sub"></button>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
